@@ -1,5 +1,3 @@
-console.log("Hello Gamer");
-
 let userScore = 0;
 let computerScore = 0;
 
@@ -19,7 +17,7 @@ const showWinner = (userWin, userChoice, computerChoice) => {
         document.getElementById("msg").innerHTML = `You win!,Your ${userChoice} beats ${computerChoice}`;
         document.getElementById("msg").style.backgroundColor = "green";
 
-        console.log("You Win the Match");
+        // console.log("You Win the Match");
 
     }
     else {
@@ -29,19 +27,19 @@ const showWinner = (userWin, userChoice, computerChoice) => {
         document.getElementById("msg").style.backgroundColor = "red";
 
 
-        console.log("You Lose")
+        // console.log("You Lose")
     }
 
 }
 
 const playGame = (userChoice) => {
-    console.log("user choice = ", userChoice);
+    // console.log("user choice = ", userChoice);
     // generate computer choice
     const computerChoice = getComputerChoice();
-    console.log("computer choice", computerChoice);
+    // console.log("computer choice", computerChoice);
 
     if (userChoice === computerChoice) {
-        console.log("Match Draw");
+        // console.log("Match Draw");
         document.getElementById("msg").innerHTML = "Game was Draw.Play Again";
         document.getElementById("msg").style.backgroundColor = "bLack";
 
